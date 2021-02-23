@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla Javascript Todo List</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+      integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o="
+      crossorigin="anonymous"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  </head>
+  <body>
+        <div class="card mycard mx-auto pb-5 mt-5">
+          <div class="header mb-5">
+            <h1 class="mt-5 mb-5">My To Do List</h1>
+          </div>
+            
+          <form class="mx-auto">
+              <div class="d-flex mb-4">
+                  <input type="text" class="todoInput form-control">
+                  <button class="todoButton btn btn-secondary" type="submit">Ajout</button>
+              </div>
+              <div class="selection">
+                  <select name="tous" class="filtre mb-5 custom-select">
+                      <option value="filtre">Filtre</option>
+                      <option value="tous">Tous</option>
+                      <option value="aFaire">A faire</option>
+                      <option value="fait">Fait</option>
+                  </select>
+              </div>
+          </form>
+          <div class="container mx-auto w-75" ondragover="onDragOver(event);" ondrop="onDrop(event);" >
+              <ul class="todoList" ></ul>
+          </div>
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+  </body>
+  </html>

@@ -1,0 +1,67 @@
+.mycard{
+    
+    border-color: aquamarine !important;
+    box-shadow: 3px 3px 3px 3px  gray !important;
+    width:50%;
+    text-align:center;
+   
+}
+
+.header{
+    background-color: aquamarine;
+}
+
+
+h1{
+    color:gray;
+}
+
+.todo{
+    display:flex;
+    justify-content: space-between; 
+    margin-bottom: 15px;  
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding:20px;
+    box-shadow: 3px 3px 3px 3px gray;
+}
+
+.todoList{
+    padding:15px;
+}
+
+.filtre{
+    border-radius: 5px;
+}
+
+.filtre option{
+    color:gray;
+}
+
+.note{
+    font-family: 'Indie Flower';
+    font-size:xx-large;
+    list-style: none;
+}
+
+.check{
+    margin-right: 5px;
+    background-color: aquamarine;
+    border-color: aquamarine;
+    border-radius: 5px;
+}
+
+.supp{
+    background-color: aquamarine;  
+    border-color: aquamarine; 
+    border-radius: 5px;
+}
+
+.fa-trash, .fa-check{
+    pointer-events: none;
+}
+
+.checker{    
+    text-decoration-line: line-through;
+    /*text-decoration-style: double;*/
+}
